@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip calculator</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>SPLI TTER</h1>
+    </header>
+    <main>
+      <div class="desktop">
+        <h2>Bill</h2>
+        <div class="ammount">
+          <img src="./images/icon-dollar.svg" alt="" />
+          <input id="bill-ammount"></input>
+        </div>
+        <h2>Select Tip %</h2>
+        <div class="tip-grid">
+          <div class="tip" id="tip">5%</div>
+          <div class="tip" id="tip">10%</div>
+          <div class="tip active-tip" id="tip">15%</div>
+          <div class="tip" id="tip">25%</div>
+          <div class="tip" id="tip">50%</div>
+          <div class="tip custom">Custom</div>
+        </div>
+        <h2>Number of People</h2>
+        <div class="ammount">
+          <img src="./images/icon-person.svg" alt="" />
+          <input id="people"></input>
+        </div>
+      </div>
+      <div class="desktop due">
+        <div class="totalReset">
+          <div class="total">
+            <div class="person">
+              <h2>Tip Amount</h2>
+              <p>/ person</p>
+            </div>
+            <h3 id="tip-ammount">0</h3>
+          </div>
+          <div class="total">
+            <div class="person">
+              <h2>Total</h2>
+              <p>/ person</p>
+            </div>
+            <h3 id="total">0</h3>
+          </div>
+          <button class="reset">RESET</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
